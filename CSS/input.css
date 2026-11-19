@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/*Familia fonte montserrat*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url('font/Montserrat-ExtraBold.otf') format('opentype');;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('font/Montserrat-Regular.otf') format('opentype');;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('font/Montserrat-Italic.otf') format('opentype');;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('font/Montserrat-Bold.otf') format('opentype');;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@theme {
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+img {
+    @apply rounded-full;
+}
+
+.logo {
+    @apply size-16;
+}
+
+a {
+    @apply grid grid-cols-4 items-center content-center gap-2 bg-blue-100 m-2 p-6 w-2/4 h-20 rounded-full;
+}
+
+.cardlink {
+    @apply flex flex-col text-center col-span-3 font-montserrat;
+}
+
+a {
+    @apply m-2 transition duration-200;
+}
+
+a:hover {
+    @apply scale-110 shadow-lg shadow-gray-400/20 z-10;
+}
+
+small {
+    @apply italic;
+}
+
+h1, p {
+    @apply text-yellow-400
+}
